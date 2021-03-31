@@ -1,3 +1,9 @@
+****************************************************************************
+This is an OpenPilot fork of Comma AI's master-ci release of 0.8.3 with KL<br>
+<br>
+This fork is highly configured for use in Chevrolet Volt
+****************************************************************************
+
 [![](https://i.imgur.com/UelUjKAh.png)](#)
 
 Table of Contents
