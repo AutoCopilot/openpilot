@@ -120,8 +120,9 @@ class CarInterface(CarInterfaceBase):
 
     ret = self.CS.update(self.cp)
 
-    cruiseEnabled = self.CS.pcm_acc_status != AccState.OFF # TESTING
-    ret.cruiseState.enabled = cruiseEnabled # TESTING
+    # TESTING - JEM 4/1/21
+    cruiseEnabled = self.CS.pcm_acc_status != AccState.OFF
+    ret.cruiseState.enabled = cruiseEnabled
     
     ret.canValid = self.cp.can_valid
     ret.steeringRateLimited = self.CC.steer_rate_limited if self.CC is not None else False
